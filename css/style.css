@@ -11,7 +11,7 @@ body {
 
 #container {
 	color: #f1f3f4;
-	min-width: 480px;
+	min-width: 450px;
 	min-height: 70vh;
 	background: rgba(0, 0, 0, 0.7);
 	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
@@ -123,4 +123,10 @@ a.login {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@media (max-width: 575.98px) {
+	#container {
+		max-width: 60%;
+	}
 }
