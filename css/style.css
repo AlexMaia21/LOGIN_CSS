@@ -1,18 +1,15 @@
 body {
 	background: url(../images/mar.jpg) no-repeat;
-	background-size: cover;
-	min-width: 100vw;
-	min-height: 100vh;
-	font-family: Verdana, sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-size: 100vw 100vh;
+	font-family: "Century Gothic", sans-serif;
+	font-size: 1em;
 }
 
 #container {
+	margin: 60px auto;
 	color: #f1f3f4;
-	min-width: 460px;
-	min-height: 70vh;
+	max-width: 470px;
+	min-height: 75vh;
 	background: rgba(0, 0, 0, 0.7);
 	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
@@ -23,6 +20,7 @@ body {
 }
 
 #container h2 {
+	text-transform: uppercase;
 	margin-bottom: 30px;
 }
 
@@ -30,15 +28,18 @@ body {
 	width: 100%;
 	margin: 10px 0 0 0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 #redes a.redes {
+	text-transform: uppercase;
 	text-decoration: none;
-	padding: 5px 46px;
+	width: 46%;
+	padding: 3px 0;
 	border: 1px solid white;
 	color: white;
 	border-radius: 2px;
+	text-align: center;
 }
 
 #redes a.redes i {
@@ -46,6 +47,7 @@ body {
 }
 
 span.texto {
+	text-transform: uppercase;
 	margin: 25px 0 10px 0;
 	font-size: 0.95em;
 }
@@ -72,6 +74,7 @@ input.password {
 
 input.email::placeholder, input.password::placeholder {
 	color: white;
+	font-size: 1.1em;
 }
 
 form .under1, .under2 {
@@ -110,9 +113,11 @@ form input.password:focus ~ .under2::after {
 
 div.checkbox {
 	margin: 12px 0 15px 0;
+	display: flex;
 }
 
 a.login {
+	text-transform: uppercase;
 	text-decoration: none;
 	color: white;
 	width: 100%;
@@ -127,6 +132,6 @@ a.login {
 
 @media (max-width: 575.98px) {
 	#container {
-		max-width: 90vw;
+		max-width: 90%;
 	}
 }
